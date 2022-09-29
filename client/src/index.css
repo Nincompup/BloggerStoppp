@@ -1,0 +1,16 @@
+
+body {
+    background-color: #FFB3B6;
+    background: url("https://cdn.pixabay.com/photo/2018/02/11/22/21/paper-3146952_960_720.jpg");
+background-attachment: fixed;
+background-size: fill;
+}
+
+* {
+    /* font-family: 'Noto Sans JP' !important; */
+    font-family: 'Heebo', sans-serif !important;
+}
+
+.WAMuiChipInput-inputRoot-18.WAMuiChipInput-outlined-21 {
+    padding-top: 2px;
+  }

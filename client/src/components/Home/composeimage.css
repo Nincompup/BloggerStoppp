@@ -1,0 +1,20 @@
+
+
+.compose-img {
+    position: fixed;
+    border-radius: '50px';
+    width:'150px';
+    right:'20px';
+    bottom:'20px';
+  transform: translate(0px);
+  transition: 0.4s all;
+  cursor: pointer;
+  }
+  
+
+  .compose-img:hover{
+    box-shadow: 6px 2px 20px 0px black ; 
+    transform : translateX(-10px);
+  }
+
+ 

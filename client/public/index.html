@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="description" content="Web site created using create-react-app" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="icon" type="image/png" href="BloggerStop.png">
+  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;700&display=swap" rel="stylesheet">
+  <title>BLOGGERSTOP</title>
+  <script src="https://accounts.google.com/gsi/client" async defer></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+    <style data-jss="" data-meta="WAMuiChipInput">
+      .WAMuiChipInput-inputRoot-19 {
+        flex: 1;
+        display: inline-flex;
+        flex-wrap: wrap;
+        min-width: 70px;
+        margin-top: 0;
+      }
+      .WAMuiChipInput-inputRoot-19.WAMuiChipInput-outlined-22, .WAMuiChipInput-inputRoot-19.WAMuiChipInput-filled-24 {
+        box-sizing: border-box;
+      }
+      .WAMuiChipInput-inputRoot-19.WAMuiChipInput-outlined-22 {
+        padding-top: 14px;
+      }
+      .WAMuiChipInput-inputRoot-19.WAMuiChipInput-filled-24 {
+        padding-top: 28px;
+      }
+      .WAMuiChipInput-input-20 {
+        flex: 1;
+        float: left;
+        display: inline-block;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        -webkit-appearance: none;
+        -webkit-tap-highlight-color: rgba(0,0,0,0);
+      }
+      .WAMuiChipInput-chipContainer-21 {
+        cursor: text;
+        display: flex;
+        flex-flow: row wrap;
+        min-height: 40px;
+        margin-bottom: -2px;
+      }
+      .WAMuiChipInput-chipContainer-21.WAMuiChipInput-labeled-25.WAMuiChipInput-chipContainer-21.WAMuiChipInput-standard-23 {
+        margin-top: 18px;
+      }
+      .WAMuiChipInput-outlined-22 input {
+        height: 16px;
+        margin-top: 4px;
+        padding-top: 4px;
+        margin-bottom: 4px;
+        padding-bottom: 12px;
+      }
+      .WAMuiChipInput-filled-24 input {
+        height: 22px;
+        margin-top: 4px;
+        padding-top: 0;
+        margin-bottom: 4px;
+      }
+      .WAMuiChipInput-marginDense-34 .WAMuiChipInput-filled-24 input {
+        height: 26px;
+      }
+      .WAMuiChipInput-label-26 {
+        top: 4px;
+      }
+      .WAMuiChipInput-label-26.WAMuiChipInput-outlined-22.WAMuiChipInput-label-26:not(.WAMuiChipInput-labelShrink-27) {
+        top: 2px;
+      }
+      .WAMuiChipInput-label-26.WAMuiChipInput-filled-24.WAMuiChipInput-label-26:not(.WAMuiChipInput-labelShrink-27) {
+        top: 15px;
+      }
+      .WAMuiChipInput-marginDense-34 .WAMuiChipInput-label-26.WAMuiChipInput-filled-24.WAMuiChipInput-label-26:not(.WAMuiChipInput-labelShrink-27) {
+        top: 20px;
+      }
+      .WAMuiChipInput-marginDense-34 .WAMuiChipInput-label-26.WAMuiChipInput-outlined-22.WAMuiChipInput-label-26:not(.WAMuiChipInput-labelShrink-27) {
+        top: 5px;
+      }
+      .WAMuiChipInput-labelShrink-27 {
+        top: 0;
+      }
+      .WAMuiChipInput-helperText-28 {
+        margin-bottom: -20px;
+      }
+      .WAMuiChipInput-underline-31:after {
+        left: 0;
+        right: 0;
+        bottom: 0;
+        content: "";
+        position: absolute;
+        transform: scaleX(0);
+        transition: transform 200ms cubic-bezier(0.0, 0, 0.2, 1) 0ms;
+        border-bottom: 2px solid #303f9f;
+        pointer-events: none;
+      }
+      .WAMuiChipInput-underline-31.WAMuiChipInput-focused-29:after {
+        transform: scaleX(1);
+      }
+      .WAMuiChipInput-underline-31.WAMuiChipInput-error-32:after {
+        transform: scaleX(1);
+        border-bottom-color: #f44336;
+      }
+      .WAMuiChipInput-underline-31:before {
+        left: 0;
+        right: 0;
+        bottom: 0;
+        content: "\00a0";
+        position: absolute;
+        transition: border-bottom-color 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.42);
+        pointer-events: none;
+      }
+      .WAMuiChipInput-underline-31:hover:not(.WAMuiChipInput-disabled-30):not(.WAMuiChipInput-focused-29):not(.WAMuiChipInput-error-32):before {
+        border-bottom: 2px solid rgba(0, 0, 0, 0.87);
+      }
+      .WAMuiChipInput-underline-31.WAMuiChipInput-disabled-30:before {
+        border-bottom-style: dotted;
+      }
+      @media (hover: none) {
+        .WAMuiChipInput-underline-31:hover:not(.WAMuiChipInput-disabled-30):not(.WAMuiChipInput-focused-29):not(.WAMuiChipInput-error-32):before {
+          border-bottom: 1px solid rgba(0, 0, 0, 0.42);
+        }
+      }
+      .WAMuiChipInput-error-32:after {
+        transform: scaleX(1);
+        background-color: #f44336;
+      }
+      .WAMuiChipInput-chip-33 {
+        float: left;
+        margin: 0 8px 8px 0;
+      }
+      </style>
+</head>
+
+<body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
+  <div id="root"></div>
+</body>
+
+</html>
